@@ -1,0 +1,12 @@
+commands need to remember for running application in docker
+
+Docker important links
+https://stackoverflow.com/questions/32744780/install-docker-toolbox-on-a-mac-via-command-line
+https://stackoverflow.com/questions/17665283/how-does-one-remove-an-image-in-docker
+
+mvn clean install
+eval "$(docker-machine env myBoxName)"
+docker build -f Dockerfile -t springboot-docker .
+docker images
+docker run -p 8085:8085 springboot-docker
+docker-machine ls
